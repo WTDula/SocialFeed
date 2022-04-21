@@ -4,9 +4,9 @@ import Post from '../Post/Post';
 const DisplayPosts = (props) => {
     return ( 
         <div>
-            {props.pagePosts.map((post) => {
+            {props.pagePosts.map((post, index) => {
                 return (
-                    <Post userName={post.userName} postBody={post.postBody}/>
+                    <Post key={index} userName={post.userName} postBody={post.postBody}/>
                 )
             })}
         </div>
