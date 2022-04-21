@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import LikeDislike from '../LikeDislike/LikeDislike';
 
 const Post = (props) => {
 
@@ -8,8 +9,7 @@ const Post = (props) => {
         <div>
             <strong>{props.userName}</strong>
             <p>{props.postBody}</p>
-            <button>Like</button>
-            <button>Dislike</button>
+            <LikeDislike />
         </div>
      );
 }
