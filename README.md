@@ -21,3 +21,6 @@ Total Weighted Project Points: /50
 BONUS:
 
 (5 points): As a developer, I want to add a date to all posts and post creations.
+
+Bonus #1: Refactor the styling of your project so it is mobile responsive by utilizing media queries.  https://css-tricks.com/a-complete-guide-to-css-media-queries/ is an excellent resource into how to set this up!
+Bonus #2 involves implementing a Component Library in your project.  Now, you've already implemented Bootstrap and MUI in your project (and it's looking great! :fingerguns:), but I'd also recommend doing some research into the React Bootstrap Library as well!  As you'll see it's more of a component-based approach to Bootstrap styling :slightly_smiling_face:  https://react-bootstrap.github.io/
