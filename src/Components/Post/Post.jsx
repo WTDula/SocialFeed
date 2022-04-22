@@ -4,15 +4,13 @@ import PostDate from '../PostDate/PostDate';
 
 const Post = (props) => {
 
-    const now = Date()
-
     return ( 
         <div>
             <hr/>
             <strong>{props.userName}</strong>
             <p>{props.postBody}</p>
             <LikeDislike />
-            <PostDate date={now}/>
+            <PostDate date={props.timestamp}/>
         </div>
      );
 }

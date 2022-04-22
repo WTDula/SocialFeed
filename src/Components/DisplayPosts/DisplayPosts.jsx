@@ -6,7 +6,7 @@ const DisplayPosts = (props) => {
         <div>
             {props.pagePosts.map((post, index) => {
                 return (
-                    <Post key={index} userName={post.userName} postBody={post.postBody}/>
+                    <Post key={index} userName={post.userName} postBody={post.postBody} timestamp={post.timestamp}/>
                 )
             })}
         </div>

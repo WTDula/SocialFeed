@@ -10,7 +10,8 @@ const CreatePost = (props) => {
         event.preventDefault()
         let newPost = {
             userName: userName,
-            postBody: postBody
+            postBody: postBody,
+            timestamp: Date()
         }
         props.addNewPost(newPost)
     }
@@ -18,10 +19,10 @@ const CreatePost = (props) => {
     return ( 
         <form onSubmit={handleSubmit}>
             <div className='mb-3'>
-                <label for="user-name" className='form-label'>Name</label>
-                <input type="text" id='user-name' className='form-control' value={userName} onChange={(event) => setUserName(event.target.value)}/>
-                <label for="post-body" className='form-label'>Post</label>
-                <textarea id='post-body' className='form-control' value={postBody} onChange={(event) => setPostBody(event.target.value)}>placeholder</textarea>
+                <label className='form-label'>Name</label>
+                <input type="text" className='form-control' value={userName} onChange={(event) => setUserName(event.target.value)}/>
+                <label className='form-label'>Post</label>
+                <textarea className='form-control' value={postBody} onChange={(event) => setPostBody(event.target.value)}>placeholder</textarea>
                 <button className='btn btn-info' type='submit'>Create</button>
             </div>
         </form>
