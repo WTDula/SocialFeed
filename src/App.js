@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
 
-  const [posts, setPosts] = useState([{userName: "Travis Dula", postBody: "This is a placeholder for the body of this post."}])
+  const [posts, setPosts] = useState([{userName: "Travis Dula", postBody: "I am about to work the next seven days in a row and am not looking forward to it."}])
 
   function addNewPost(post){
     let tempPosts = [post, ...posts]
